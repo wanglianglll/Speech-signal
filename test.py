@@ -22,9 +22,9 @@ import winsound
 MOUSE_TRIGGER_BUTTON = mouse.Button.left
 SLEEP_TOGGLE_KEY = Key.f2
 EXIT_HOLD_KEY = Key.f4
-APPID = '1231a5a3'
-APIKEY = '9832d48173a5c051f3a42830a205d144'
-API_SECRET = 'M2IyNmNmMWVhMjEzMjdjYzk1ODIyOGUw'
+APPID = ''
+APIKEY = ''
+API_SECRET = ''
 
 # 状态变量
 is_recording = False
@@ -250,6 +250,7 @@ def on_key_event(key, pressed):
             speak_mode("开始休眠" if is_sleeping else "开始工作")
         elif key == EXIT_HOLD_KEY:
             print("🔴 程序已退出")
+            speak_mode("程序已退出")
             os._exit(0)
 
 
