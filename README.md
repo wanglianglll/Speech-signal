@@ -39,7 +39,20 @@
 
 `pip install -r requirements.txt`
 
-### 2. 运行程序
+### 2. 获取讯飞API许可
+这里的许可是免费的，每日有500次，足够日常使用
+
+#### 讯飞官网：https://www.xfyun.cn
+
+#### 自行注册账号后点击 “控制台” -> “创建新应用”
+
+#### 应用名称、分类、功能描述随便填写并提交
+
+#### 点击左侧边栏：“语音识别” -> “语音听写（流式版）”
+
+#### 复制APPID、APISecret、APIKey到test.py的相应位置
+
+### 3. 运行程序
 
 `python test.py`
 （或将文件重命名为更有意义的名称后运行）
@@ -53,8 +66,11 @@ README.md：项目说明文档
 
 ## 🛠 可选打包方式
 如需生成可执行程序（.exe）：
+
 `pip install pyinstaller`
+
 `pyinstaller -F -w cd4599e6-3e6c-4e00-a153-bbcb548edecb.py`
+
 -F: 打包为单一文件
 
 -w: 隐藏控制台窗口（可选）
