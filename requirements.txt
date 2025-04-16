@@ -1,0 +1,7 @@
+pyinstaller
+websocket-client
+pyaudio
+pynput
+pyttsx3
+pyperclip
+pywin32

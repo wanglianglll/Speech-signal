@@ -64,16 +64,22 @@ requirements.txt：依赖项安装配置
 
 README.md：项目说明文档
 
-## 🛠 可选打包方式
-如需生成可执行程序（.exe）：
+## 🛠 打包与开机自启动
+生成可执行程序方便我们设置成开机自启动（.exe）：
 
-`pip install pyinstaller`
-
-`pyinstaller -F -w cd4599e6-3e6c-4e00-a153-bbcb548edecb.py`
+`pyinstaller -F -w test.py`
 
 -F: 打包为单一文件
 
 -w: 隐藏控制台窗口（可选）
+
+exe文件位于dist文件夹下
+
+文件夹中选中exe文件，右键创建快捷方式
+
+使用快捷键 win+r唤起窗口，在其中输入：`shell:startup`
+
+将创建的快捷方式放入打开的文件夹中
 
 ## 🗒️ 注意事项
 请确保麦克风权限已启用；
