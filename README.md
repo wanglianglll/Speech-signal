@@ -37,5 +37,34 @@
 
 ### 1. 安装依赖包
 
-```bash
-pip install -r requirements.txt
+`pip install -r requirements.txt`
+
+### 2. 运行程序
+
+`python test.py`
+（或将文件重命名为更有意义的名称后运行）
+
+## 🧩 文件说明
+test.py：主程序入口
+
+requirements.txt：依赖项安装配置
+
+README.md：项目说明文档
+
+## 🛠 可选打包方式
+如需生成可执行程序（.exe）：
+`pip install pyinstaller`
+`pyinstaller -F -w cd4599e6-3e6c-4e00-a153-bbcb548edecb.py`
+-F: 打包为单一文件
+
+-w: 隐藏控制台窗口（可选）
+
+## 🗒️ 注意事项
+请确保麦克风权限已启用；
+
+本程序依赖科大讯飞的实时语音识别服务，需保持网络连接；
+
+识别效果依赖环境噪音与发音清晰度。
+
+## 📞 联系方式
+如有相关问题需要讨论，请联系QQ:1450417643
